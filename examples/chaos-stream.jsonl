@@ -1,0 +1,27 @@
+{"type":"TextMessageStart","messageId":"m1","role":"assistant"}
+{"type":"RunStarted","threadId":"th-chaos","runId":"run-20261117-c"}
+{"type":"StepStarted","stepName":"plan"}
+{"type":"StepFinished","stepName":"draft"}
+{"type":"ToolCallStart","toolCallId":"t1","toolCallName":"run_query"}
+{"type":"ToolCallEnd","toolCallId":"t1"}
+{"type":"ToolCallArgs","toolCallId":"t1","delta":"{\"q\":\"users\"}"}
+{"type":"ToolCallResult","messageId":"m9","toolCallId":"t2","content":"rows=42"}
+{"type":"ToolCallStart","toolCallId":"t3","toolCallName":"delete_all"}
+{"type":"ToolCallResult","messageId":"m3r","toolCallId":"t3","content":"deleted"}
+{"type":"ToolCallEnd","toolCallId":"t3"}
+{"type":"TextMessageContent","messageId":"m2","delta":"Partial answer emitted before any Start event."}
+{"type":"TextMessageStart","messageId":"m1","role":"assistant"}
+{"type":"ReasoningMessageStart","messageId":"m1","role":"reasoning"}
+{"type":"StateDelta","delta":[{"op":"set","path":"/x","value":1}]}
+{"type":"StateDelta","delta":[{"op":"replace","path":"/missing","value":1}]}
+{"type":"StateSnapshot","snapshot":{"status":"draft","items":[]}}
+{"type":"StateDelta","delta":[{"op":"replace","path":"/status","value":"final"}]}
+{"type":"StateSnapshot","snapshot":{"status":"draft","items":[]}}
+{"type":"THINKING_TEXT_MESSAGE_CONTENT","messageId":"m5","delta":"hmm, let me reconsider"}
+{"type":"STEP_STARTED","stepName":"audit"}
+{"type":"Custom","value":{}}
+{"type":"Custom","value":{}}
+{"type":"MessagesSnapshot","messages":[{"id":"m3","role":"assistant","content":"only this survives"}]}
+{"type":"RunError"}
+{"type":"Custom","value":{}}
+{"type":"TextMessageEnd","messageId":"m1"}

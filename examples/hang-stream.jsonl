@@ -1,0 +1,8 @@
+{"type":"RunStarted","threadId":"th-deploy-9","runId":"run-20261117-b"}
+{"type":"StepStarted","stepName":"execute"}
+{"type":"TextMessageStart","messageId":"m1","role":"assistant"}
+{"type":"TextMessageContent","messageId":"m1","delta":"Deploying the payments service to staging. "}
+{"type":"TextMessageContent","messageId":"m1","delta":"Running pre-flight checks against the canary fleet."}
+{"type":"ToolCallStart","toolCallId":"t1","toolCallName":"deploy_service"}
+{"type":"ToolCallArgs","toolCallId":"t1","delta":"{\"env\":\"staging\",\"canaryPercent\":10}"}
+{"type":"TextMessageContent","messageId":"m1","delta":"Waiting for the deploy to settle before I report back."}

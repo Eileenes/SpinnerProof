@@ -1,0 +1,18 @@
+services:
+  spinnerproof:
+    build: .
+    image: spinnerproof:latest
+    container_name: spinnerproof
+    ports:
+      - "8800:8800"
+    environment:
+      - PORT=8800
+      - HOST=0.0.0.0
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+    restart: unless-stopped
